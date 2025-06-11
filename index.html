@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" loop autoplay controls>
+        <source src="Audio/Spiderman-theme.mp3"
+        type="audio/mpeg">
+        Il tuo browser non supporta l'audio HTML5
+    </audio>
+    <header>
+        <button id="toggle-dark">🌙 Dark Mode</button>
+        <h1>Spider-Man Universe</h1>
+        <nav>
+            <ul>
+                <li><a href="#attori"></a></li>
+                <li><a href="#giochi"></a></li>
+                <li><a href="#vota"></a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section id="attori">
+        <h2>Gli Spider-Man del Cinema</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="Images/tobey.jpg" alt="Tobey Maguire">
+                <h3>Tobey Maguire</h3>
+                <p>Il primo Spider-Man dal 2002 al 2007, trilogia di Sam Raimi.</p>
+        </div>
+        <div class="card">
+            <img src="Images/andrew.jpg" alt="Andrew Garfield">
+            <h3>Andrew Garfield</h3>
+            <p>Protagonista di The Amizing Spider-Man (2012-2014)</p>
+            </div>
+            <div class="card">
+                <img src="Images/holland.jpg" alt="Tom Holland">
+                <h3>Tom Holland</h3>
+                <p>Lo Spider-Man del MCU, presente dal 2016 ad oggi.</p>
+            </div>
+        </div>
+    </section>
+    
+<section id="giochi">
+    <h2>I Videogiochi</h2>
+    <img src="Images/spider-man-2.jpg" alt="Spider-Man 2 PS5" class="main-img"> 
+    <p>Spider-Man PS4 e PS5 sono considerati tra i migliori giochi d'azione mai creati.</p>
+</section>
+
+<section>
+    <h2>Chi è il tuo Spider-Man preferito?</h2>
+    <button onclick="vota('Tobey')">Tobey</button>
+    <button onclick="vota('Andrew')">Andrew</button>
+    <button onclick="vota('Holland')">Holland</button>
+    <p id="risultato"></p>
+</section>
+
+<footer>
+    <p>Creato da Francesco | Fan project</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
